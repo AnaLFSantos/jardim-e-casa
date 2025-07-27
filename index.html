@@ -1,112 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casa e Jardim</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jardim e Casa</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-
-    header {
-      background-color: #4caf50;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ccc;
-    }
-
-    h1 {
-      margin-bottom: 0.5rem;
-    }
-
-    section {
-      margin-top: 2rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    img {
+    img.flor {
       width: 100%;
       max-width: 600px;
       display: block;
-      margin: 1.5rem auto;
-      border-radius: 12px;
+      margin: 1rem auto;
+      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    footer {
+    .legenda {
       text-align: center;
-      margin-top: 3rem;
-      padding: 1rem;
-      background-color: #eee;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    @media (max-width: 600px) {
-      main {
-        margin: 1rem;
-      }
+      font-style: italic;
+      color: #555;
+      margin-bottom: 2rem;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
-    <h1>Casa e Jardim</h1>
-    <p>Seu espaço, sua paz, sua natureza.</p>
+    <h1>Jardim & Casa</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#jardim">Jardim</a></li>
+        <li><a href="#casa">Casa</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <p>
-        O lar vai muito além de paredes e telhado — é o espaço onde se constroem memórias, acolhe-se a família e se cultiva bem-estar.
-        Um jardim bem cuidado transforma a casa em um refúgio de paz e harmonia, conectando o cotidiano à natureza.
-      </p>
+  <section id="sobre">
+    <h2>Bem-vindo ao Jardim & Casa</h2>
+    <p>Dicas práticas, inspirações e cuidados para transformar seu lar em um paraíso verde e aconchegante.</p>
+  </section>
 
-      <!-- 🌺 Imagem da flor -->
-      <img src="Flor.jpg" alt="Flor vermelha no jardim">
+  <section id="jardim">
+    <h2>Dicas para o Jardim</h2>
 
-    </section>
+    <!-- 🌸 Imagem da flor -->
+    <img src="flor.jpg" alt="Flor vermelha no jardim" class="flor">
+    <p class="legenda">Flor do nosso jardim — beleza natural em casa.</p>
 
-    <section>
-      <h2>Benefícios de cuidar da casa e do jardim</h2>
-      <ul>
-        <li>Proporciona conforto e aconchego</li>
-        <li>Reduz o estresse e melhora a saúde mental</li>
-        <li>Estimula hábitos saudáveis e sustentáveis</li>
-        <li>Valoriza o imóvel e o ambiente ao redor</li>
-      </ul>
-    </section>
+    <ul>
+      <li>Como plantar hortas em pequenos espaços</li>
+      <li>Plantas que purificam o ar</li>
+      <li>Cuidados com orquídeas e suculentas</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Dicas práticas</h2>
-      <ul>
-        <li>Plantas fáceis de cuidar: espada-de-são-jorge, jiboia, suculentas</li>
-        <li>Use cores claras para ampliar os espaços</li>
-        <li>Mantenha uma rotina de limpeza e organização</li>
-      </ul>
-    </section>
-  </main>
+  <section id="casa">
+    <h2>Cuidados com a Casa</h2>
+    <ul>
+      <li>Decoração sustentável com objetos recicláveis</li>
+      <li>Como deixar sua casa mais aconchegante</li>
+      <li>Dicas de limpeza natural</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form>
+      <label>Nome:</label><br>
+      <input type="text" name="nome"><br>
+      <label>Email:</label><br>
+      <input type="email" name="email"><br>
+      <label>Mensagem:</label><br>
+      <textarea name="mensagem"></textarea><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
   <footer>
-    &copy; 2025 - Criado por Ana Lice Freires
+    <p>&copy; 2025 Jardim & Casa. Todos os direitos reservados.</p>
   </footer>
-
 </body>
+
 </html>
